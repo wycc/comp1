@@ -1,0 +1,26 @@
+# Introduction
+
+The databset is for the training of Chinese OCR. We have 4803 different characters in this dataset.
+Each character is in a seperate folder.
+
+# Dataset
+
+# Rule
+
+# deadline
+
+# Sample implementation
+
+# Dataset
+
+# Rule
+
+# deadline
+
+# Sample implementation
+
+# Rule
+
+# deadline
+
+# Sample implementation
