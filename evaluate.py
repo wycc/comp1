@@ -20,11 +20,16 @@ def evaluate_model(model):
   # iterate all batches on the dataset
   correct = 0
   total = 0
+  num=0
   for images, labels in test_dataloder:
     #print(images.shape)
     outputs = model(images)
     _, predicted = torch.max(outputs, 1)
     total += labels.size(0)
+    num += labels.size(0)
+    if sys.argv[2] == 'testing':
+      if num > len(test_dataset)*0.2:
+        break
     correct += (predicted == labels).sum().item()
 
 
