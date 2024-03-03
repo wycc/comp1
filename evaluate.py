@@ -27,7 +27,7 @@ def evaluate_model(model):
     _, predicted = torch.max(outputs, 1)
     total += labels.size(0)
     num += labels.size(0)
-    if sys.argv[2] == 'testing':
+    if sys.argv[2] != 'testing':
       if num > len(test_dataset)*0.2:
         break
     correct += (predicted == labels).sum().item()
